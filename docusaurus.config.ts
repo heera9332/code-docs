@@ -39,8 +39,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "#",
+          editUrl: "#",
         },
         blog: {
           showReadingTime: true,
@@ -50,8 +49,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "#",
+          editUrl: "#",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -108,7 +106,7 @@ const config: Config = {
             },
             {
               label: "JavaScript",
-              to: "/docs/javascript",
+              to: "#",
             },
           ],
         },
@@ -116,8 +114,8 @@ const config: Config = {
           title: "Important Links",
           items: [
             {
-              label: "Github",
-              href: "#",
+              label: "Privacy Policy",
+              href: "privacy-policy",
             },
           ],
         },
