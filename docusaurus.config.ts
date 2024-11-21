@@ -94,15 +94,15 @@ const config: Config = {
           items: [
             {
               label: "ReactJS",
-              to: "/docs/reactjs",
+              to: "/docs/category/reactjs",
             },
             {
               label: "WordPress",
-              to: "/docs/wordpress",
+              to: "/docs/category/wordpress",
             },
             {
               label: "CSS",
-              to: "/docs/css",
+              to: "/docs/category/css",
             },
             {
               label: "JavaScript",
@@ -115,7 +115,7 @@ const config: Config = {
           items: [
             {
               label: "Privacy Policy",
-              href: "privacy-policy",
+              href: "/privacy-policy",
             },
           ],
         },
