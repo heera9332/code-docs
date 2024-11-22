@@ -4,28 +4,60 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
-
+import Head from "@docusaurus/Head";
 import styles from "./index.module.css";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Tutorial - 5min ⏱️
-          </Link>
+    <>
+      <Head>
+        <meta
+          name="google-adsense-platform-account"
+          content="ca-host-pub-2644536267352236"
+        />
+        <meta
+          name="google-adsense-platform-domain"
+          content="sitekit.withgoogle.com"
+        />
+        <meta
+          name="generator"
+          content="Elementor 3.25.9; features: e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-swap"
+        />
+
+        <meta name="onesignal" content="wordpress-plugin" />
+      </Head>
+      <header className={clsx("hero hero--primary", styles.heroBanner)}>
+        <div className="container">
+          <Heading as="h1" className="hero__title">
+            {siteConfig.title}
+          </Heading>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <div className={styles.buttons}>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/intro"
+            >
+              Tutorial - 5min ⏱️
+            </Link>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6932757539306050"
+        crossOrigin="anonymous"
+      ></script>
+      <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client="ca-pub-6932757539306050"
+        data-ad-slot="8736906737"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </>
   );
 }
 
