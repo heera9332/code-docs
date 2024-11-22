@@ -69,3 +69,18 @@ class Animal {
 - Developers write code in TypeScript (.ts files).
 - TypeScript is compiled (transpiled) into JavaScript (.js files).
 - The resulting JavaScript can be run in any environment that supports JavaScript.
+
+<script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6932757539306050"
+        crossOrigin="anonymous"
+      ></script>
+<ins
+  className="adsbygoogle"
+  style="block"
+  data-ad-client="ca-pub-6932757539306050"
+  data-ad-slot="8736906737"
+  data-ad-format="auto"
+  data-full-width-responsive="true"
+></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
