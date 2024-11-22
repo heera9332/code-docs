@@ -1,4 +1,10 @@
-# React hooks
+---
+title: "ReactJS Hooks"
+keywords: ["react hooks", "hooks in reactjs"]
+date: 22-11-2024
+---
+
+# ReactJS Hooks
 
 React Hooks are functions that allow you to use state and lifecycle features in functional components
 
@@ -59,8 +65,21 @@ function ExampleComponent() {
 
 ### useRef
 
-useRef hook - provide direct access of dom element, it allows you to persist values between renders
+useRef hook - Provide direct access of DOM element, it allows you to persist values between renders
 
 ```jsx
+const MyCom = () => {
+  const divRef = useRef(null); // default is null
 
+  const handleClick = () => {
+    if(divRef.current) {
+        console.log(document.getElementById(divRef.current.getAttribute("id"));
+    }
+  }
+  return (
+    <div ref={divRef} id="div-id">
+      <button onClick={handleClick}>click me</button>
+    </div>
+  )
+}
 ```
