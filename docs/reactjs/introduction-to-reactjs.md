@@ -158,19 +158,3 @@ export default MyClassComponent;
 - The render method is where the component's UI is defined.
 
 Class components also have lifecycle methods, such as componentDidMount, componentDidUpdate, and componentWillUnmount, which can be used for handling side effects, fetching data, or cleaning up resources.
-
-<script
-async
-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6932757539306050"
-crossOrigin="anonymous"
-></script>
-
-<ins
-className="adsbygoogle"
-style="block"
-data-ad-client="ca-pub-6932757539306050"
-data-ad-slot="8736906737"
-data-ad-format="auto"
-data-full-width-responsive="true"
-></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>

@@ -1,3 +1,9 @@
+---
+keyword: ["class", "object", "class in cpp", "object in cpp"]
+author: "Heera Singh"
+date: 24-11-2024
+---
+
 # Class & Object
 
 Class is a blueprint of an object, which define the functionality and attributes of an object.
