@@ -20,12 +20,12 @@ function HomepageHeader() {
           name="google-adsense-platform-domain"
           content="sitekit.withgoogle.com"
         />
-        <meta
-          name="generator"
-          content="Elementor 3.25.9; features: e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-swap"
-        />
 
-        <meta name="onesignal" content="wordpress-plugin" />
+        <link
+          rel="shortcut icon"
+          href="https://edevhindi.com/wp-content/uploads/2024/05/e-dev-hindi.png"
+          type="image/x-icon"
+        />
       </Head>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">

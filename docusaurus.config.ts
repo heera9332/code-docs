@@ -64,7 +64,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "https://edevhindi.com/wp-content/uploads/2024/05/e-dev-hindi.png",
     navbar: {
       title: "Code Fragments",
       logo: {
@@ -78,7 +78,24 @@ const config: Config = {
           position: "left",
           label: "Tutorial",
         },
-        // { to: "/blog", label: "Blog", position: "left" },
+        {
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "ReactJS",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "NextJS",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "TypeScript",
+        },
         {
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",
