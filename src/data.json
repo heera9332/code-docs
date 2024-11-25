@@ -1,0 +1,27 @@
+[
+  {
+    "title": "ReactJS",
+    "content": "ReactJS is JavaScript libarary",
+    "link": "/docs/category/reactjs"
+  },
+  {
+    "title": "NextJS",
+    "content": "Configure your Docusaurus site...",
+    "link": "/docs/category/reactjs"
+  },
+  {
+    "title": "CSS",
+    "content": "CSS is used to design web pages",
+    "link": "/docs/category/css"
+  },
+  {
+    "title": "WordPress",
+    "content": "WordPress is a open-source CMS",
+    "link": "/docs/category/wordpress"
+  },
+  {
+    "title": "Object-Oriented Programming",
+    "content": "It is a programming paradism,",
+    "link": "/docs/category/object-oriented-programming"
+  }
+]
