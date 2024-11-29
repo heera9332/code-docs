@@ -6,6 +6,9 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import Head from "@docusaurus/Head";
 import styles from "./index.module.css";
+import "./utilities-classes.css";
+import data from "../data.json";
+import SearchBar from "../components/SearchBar";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -41,6 +44,7 @@ function HomepageHeader() {
               Tutorial - 5min ⏱️
             </Link>
           </div>
+          <SearchBar data={data} />
         </div>
       </header>
       <script
