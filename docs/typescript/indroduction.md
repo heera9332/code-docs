@@ -4,8 +4,7 @@ author: Heera Singh Lodhi
 date: 21-11-2024
 keywords: ["typescript", "javascript"]
 description: ""
-slug: "reactjs-components"
-id: "reactjs-components"
+slug: "introduction-to-reactjs"
 ---
 
 # Introduction to TypeScript

@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Introduction to ReactJS
 
 ![ReactJS logo](/img/reactjs/reactjs.png)
