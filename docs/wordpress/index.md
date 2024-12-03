@@ -1,7 +1,7 @@
 ---
 sidebar_position: 0
-date
-author
+date: 03-12-2024
+author: Heera Singh Lodhi
 ---
 
 # WordPress

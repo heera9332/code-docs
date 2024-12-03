@@ -9,6 +9,12 @@ import styles from "./index.module.css";
 import "./utilities-classes.css";
 import data from "../data.json";
 import SearchBar from "../components/SearchBar";
+import Hero from "../components/home-page/hero";
+import Contact from "../components/home-page/contact";
+import Documentation from "../components/home-page/documentation";
+import Features from "../components/home-page/features";
+ 
+import "../css/tailwind.css";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -74,7 +80,10 @@ export default function Home(): JSX.Element {
     >
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <Hero />
+        <Documentation />
+        <Features />
+        <Contact />
       </main>
     </Layout>
   );
