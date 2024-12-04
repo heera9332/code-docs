@@ -2,6 +2,7 @@
 keyword: ["class", "object", "class in cpp", "object in cpp"]
 author: "Heera Singh"
 date: 24-11-2024
+slug: 'classes-and-objects'
 ---
 
 # Class & Object

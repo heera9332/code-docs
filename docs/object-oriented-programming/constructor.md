@@ -1,11 +1,12 @@
 ---
+title: "Constructor"
 date: 22-11-2024
-author: Heera Singh
-keywords: ["constructor in c++", "oops in c++"]
 ---
 
 
 # Constructor
+
+
 
 A constructor is a special type of member function that is called when an object of a class is created. Constructors are used to initialize the member variables of an object and to perform any other tasks that are required to set up the object for use.
 
