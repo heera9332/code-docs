@@ -18,7 +18,7 @@ The cart is where customers accumulate products they intend to purchase. It can 
 
 An order is created when a customer completes the checkout process. Each order has a status indicating its current state:
 
-- Pending Payment: Order received but awaiting payment.
+- **Pending Payment**: Order received but awaiting payment.
 - On Hold: Awaiting payment confirmation; stock is reduced but requires manual payment verification.
 - Processing: Payment received, stock reduced; order is awaiting fulfillment.
 - Completed: Order fulfilled and requires no further action.
