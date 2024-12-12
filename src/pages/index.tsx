@@ -15,6 +15,7 @@ import Documentation from "../components/home-page/documentation";
 import Features from "../components/home-page/features";
  
 import "../css/tailwind.css";
+import "./docs.css";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
