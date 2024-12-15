@@ -12,8 +12,6 @@ In this guide, we’ll cover common issues you might face—ranging from PHP war
 
 *(For more in-depth tutorials and related resources, refer to our previous blog posts: [My Previous WordPress Articles](#) and also check the official WordPress documentation.)*
 
----
-
 ## Common WordPress Warnings and PHP Errors
 
 ### Why They Happen
@@ -30,8 +28,6 @@ You might see warnings or errors if:
 - **Update Themes and Plugins:** Keep themes and plugins updated to maintain compatibility with the latest WordPress and PHP versions.  
 - **Refer Back to My Blog:** For more hands-on tips and code snippets, check out [My Previous WordPress Articles](#).
 
----
-
 ## Troubleshooting Elementor Issues
 
 [Elementor](https://elementor.com/help/) is a popular page builder, but sometimes you might face:
@@ -45,7 +41,6 @@ You might see warnings or errors if:
 - [Elementor Official Documentation](https://elementor.com/help/)  
 - [My Troubleshooting Elementor Guide](#)
 
----
 
 ## Theme-Specific Errors
 
@@ -59,8 +54,6 @@ Different themes have their own quirks. Popular free themes like [OceanWP](https
 
 For more detailed instructions, refer to the [OceanWP Documentation](https://docs.oceanwp.org/) and our [previous blog posts](#) for theme customization tips.
 
----
-
 ## Theme/Plugin Development Issues
 
 If you’re developing your own theme or plugin, you might face challenges like:
@@ -71,8 +64,6 @@ If you’re developing your own theme or plugin, you might face challenges like:
 4. **Additional CSS Not Working in Customizer:** Ensure you’ve saved changes properly and that the theme doesn’t override these settings.
 
 For real-world examples and code snippets, see [My Previous WordPress Articles](#).
-
----
 
 ## WooCommerce Issues
 
@@ -88,8 +79,6 @@ For real-world examples and code snippets, see [My Previous WordPress Articles](
   Ensure the right pages are linked in `WooCommerce > Settings > Advanced`, or try building pages with the Gutenberg editor or Elementor Pro.
 
 Check out our [detailed WooCommerce troubleshooting guide](#) for step-by-step solutions.
-
----
 
 ## Bonus Tips: Enabling WordPress Debugging
 
