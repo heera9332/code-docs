@@ -1,6 +1,6 @@
 ---
-title: "WordPress Trouble Tricks"
-slug: "wordpress-trouble-tricks"
+title: "WordPress development Issues"
+slug: "wordpress-development-issues"
 date: 2024-12-15
 ---
 

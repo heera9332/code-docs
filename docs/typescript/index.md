@@ -9,5 +9,6 @@ keywords: ["typescript dodcs"]
 
 # Table of Contents
 
-<!-- - [Introduction to TypeScript](./indroduction)
-- [Key Features of TypeScript](./key-features-of-typescript) -->
+- [Introduction to TypeScript](./indroduction.md)
+- [Key Features of TypeScript](./key-features-of-typescript)
+

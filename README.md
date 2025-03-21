@@ -1,4 +1,4 @@
-# Code Fragments
+# Code Docs
 
 Code examples and easy to understable documentations
 

@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "Code Fragments",
+  title: "Code Docs",
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
@@ -66,9 +66,9 @@ const config: Config = {
     // Replace with your project's social card
     image: "https://edevhindi.com/wp-content/uploads/2024/05/e-dev-hindi.png",
     navbar: {
-      title: "Code Fragments",
+      title: "Code Docs",
       logo: {
-        alt: "Code Fragments Logo",
+        alt: "Code Docs Logo",
         src: "https://edevhindi.com/wp-content/uploads/2024/05/e-dev-hindi.png",
       },
       items: [
