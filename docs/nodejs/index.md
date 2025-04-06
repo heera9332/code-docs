@@ -4,134 +4,95 @@ date: 19-02-2025
 author: Heera Singh Lodhi
 ---
 
-**What is Node.js?**
+# Table of contents
 
-Node.js is a JavaScript runtime built on Chrome’s V8 engine that allows you to run JavaScript on the server-side. It uses an event-driven, non-blocking I/O model, making it efficient for scalable applications.
+## 1. Core Node.js Concepts
 
-**What are the key features of Node.js?**
+- Start here to understand how Node.js works behind the scenes:
+- What is Node.js?
+- Node.js Architecture (event loop, single-threaded, non-blocking I/O)
+- Node.js vs traditional backend tech (PHP, Java, etc.)
+> [Read](./introduction-to-nodejs.md)
 
-- _Asynchronous and Event-Driven:_ Non-blocking I/O operations.
-- _Single-Threaded with Event Loop:_ Uses a single thread but manages multiple - requests efficiently.
-- _Built-in Libraries:_ Comes with modules like fs, http, path, etc.
-- _Fast Execution:_ Uses the V8 engine for fast performance.
-- _Cross-Platform:_ Runs on Windows, macOS, and Linux.
+## 2. Node.js Fundamentals
 
-**What are the types of Node.js modules?**
+- Learn the basics:
+- require vs import, CommonJS vs ES Modules
+- File System (fs module)
+- http module – creating basic server
+- Events & EventEmitter
+- Buffers and Streams
+- Global objects (**dirname, **filename, process, console)
+> > [Read](./introduction-to-nodejs.md)
 
-_Core Modules_ – Built-in (fs, http, path, events).
-_Local Modules_ – Custom modules created by developers.
-_Third-Party Modules_ – Installed via NPM (e.g., express, mongoose, axios).
+## 3. NPM (Node Package Manager)
 
-## Asynchronous Programming
+- Understanding package.json
+- Installing & managing packages
+- Dev dependencies vs dependencies
+- Creating your own packages
 
-**What are callbacks, and how do they work?**
+## 4. Building APIs with Node.js
 
-A callback is a function passed as an argument to another function, executed later.
+- This is your bread and butter:
+- Creating REST APIs
+- Handling routes manually
+- Parsing incoming data (query, body, params)
+- Using Express.js for routing and middlewares
 
-```js
-function fetchData(callback) {
-  setTimeout(() => {
-    callback("Data received!");
-  }, 2000);
-}
+## 5. Express.js (a must-learn framework)
 
-fetchData((data) => {
-  console.log(data);
-});
-```
+- Routing (GET, POST, PUT, DELETE)
+- Middleware (built-in, custom, third-party like morgan, cors)
+- Error handling
+- Request/response lifecycle
+- Serving static files
+- Express Router for modular code
 
-The main reason for using callback functions is to ensure that code execution is asynchronous and non-blocking, which is crucial for handling operations like API calls, file reading, or event handling.
+## 6. Working with Databases
 
-**What is the difference between synchronous and asynchronous code?**
+- Start with MongoDB since you use MERN:
+- MongoDB CRUD operations
+- Mongoose ORM (schema, model, validation)
+- Connecting MongoDB with Node.js
+- Using async/await and handling promises
+- You can also explore:
+- PostgreSQL + Sequelize or Prisma
+- MySQL + mysql2 package
 
-_Synchronous:_ Executes one task at a time (blocking).
-_Asynchronous:_ Executes multiple tasks concurrently (non-blocking).
+## 7. Authentication & Authorization
 
-**What are Promises, and how do they improve async operations?**
+- JWT (JSON Web Token)
+- Session-based auth
+- Role-based access control
+- Storing passwords securely (bcrypt)
 
-Promises are used to handle asynchronous operations without callback hell.
+## 8. Error Handling & Validation
 
-```js
-const fetchData = () => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("Data received!");
-    }, 2000);
-  });
-};
+Global error handlers
+- Input validation with libraries like Joi, express-validator
+- Custom error classes
 
-fetchData()
-  .then((data) => console.log(data))
-  .catch((err) => console.error(err));
-```
+## 9. Advanced Concepts
 
-**What is async/await? How is it different from Promises?**
+- Async programming: Promises, async/await, try/catch
+- File uploads (multer)
+- Sending emails (nodemailer)
+- Environment variables with .env and dotenv
+- Rate limiting, request logging, CORS
 
-- `async/await` makes asynchronous code look synchronous.
-- `await` pauses execution until the Promise resolves.
+## 10. Build Tools & Production
 
-```js
-async function fetchData() {
-  let data = await fetchDataFromServer();
-  console.log(data);
-}
-```
+- Using nodemon for development
+- pm2 for process management
+- Connecting frontend with backend (CORS, API calls)
+- Folder structure for scalable apps
+- Deploy Node.js apps (Heroku, Render, VPS with Nginx)
+- Handling SSL, reverse proxy with Nginx
 
-**why the need of callback function in js**
+## Optional (But Useful) Topics
 
-A callback function in JavaScript is a function that is passed as an argument to another function and is executed later, usually after an operation has completed.
-
-The main reason for using callback functions is to ensure that code execution is asynchronous and non-blocking, which is crucial for handling operations like API calls, file reading, or event handling.
-
-- Asynchronous Execution
-- Avoiding Blocking Operations
-
-```js
-function delay() {
-  for (let i = 0; i < 1e9; i++) {} // Blocks execution for a while
-  console.log("Blocking done!");
-}
-console.log("Before delay");
-delay();
-console.log("After delay"); // Runs only after `delay()` is finished
-```
-
-```js
-console.log("Before delay");
-setTimeout(() => {
-  console.log("Non-blocking done!");
-}, 2000);
-console.log("After delay");
-```
-
-- Event Handling
-- Handling API Requests
-- Higher-Order Functions
--
-
-## Event Loop & Process Management
-
-![event-loop](https://media.geeksforgeeks.org/wp-content/uploads/20250208123836185275/Event-Loop-in-JavaScript.jpg)
-
-![event-loop](./images/broswer-api.png)
-
-![event-loop](./images/image.png)
-
-## Security & Best Practices
-
-What are common security vulnerabilities in Node.js?
-Cross-Site Scripting (XSS) – Use data sanitization.
-Cross-Site Request Forgery (CSRF) – Use CSRF tokens.
-Rate Limiting – Prevent brute-force attacks.
-
-## Deployment & Performance
-
-- Use PM2 for process management.
-- Deploy on VPS, AWS, Heroku, or Docker.
-- Use Nginx as a reverse proxy.
-
-**How do you improve Node.js performance?**
-
-- Use gzip compression.
-- Use cluster mode (node: cluster).
-- Optimize database queries with indexes.
+- WebSockets (socket.io) for real-time apps
+- GraphQL (alternative to REST)
+- Queues with bull and Redis
+- Caching with Redis

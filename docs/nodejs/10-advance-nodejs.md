@@ -3,7 +3,7 @@ title: "Advanced NodeJS"
 slug: advanced-nodejs
 date: 22-03-2025
 author: Heear Singh
-keywords: "nodejs, advance nodejs, event emmits in nodejs"
+keyword: "advance nodejs"
 ---
 
 # Advance NodesJS
