@@ -1,3 +1,6 @@
+---
+slug: introduction-to-c
+---
 # Introduction to C Programming
 
 C is a powerful, general‑purpose programming language that has played a significant role in the development of modern software. Known for its efficiency and performance, C is widely used for system‑level programming, such as developing operating systems, compilers, and embedded systems.
@@ -56,7 +59,7 @@ C is more than just a programming language—it’s the foundation of modern com
 
 ## Important Links
  
-- [Github](www.github.com/heera9331)  
+- [Github](https://www.github.com/heera9331)  
 
 ## References
 

@@ -2,6 +2,7 @@
 keywords: [hello world in c, c language docs, c docs, c example]
 date: 22-04-2025
 author: Heera Singh
+slug: hello-world
 ---
 # Hello, World!
 
