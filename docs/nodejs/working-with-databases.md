@@ -8,7 +8,8 @@ NodeJS a JS runtime that runs on server, on server we connect to any databases l
 ## ORM (Object Relational Model)
 
 - Generally in development we use databases ORM (Object relational Modal) library to map Real object to Database
--
+- Prisma (MySQL, Postgres)
+- Mongoose (Mongodb)
 
 ## NodeJS with MongoDB
 
@@ -21,9 +22,9 @@ npm install mongoose
 ```
 
 ```js
-function connectDB() {
+async function connectDB() {
   try {
-    const connect = mongoose.connect(mongo_uri);
+    const connect = await mongoose.connect(mongo_uri);
   } catch (err) {
     console.log(err);
   }

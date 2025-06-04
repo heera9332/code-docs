@@ -195,3 +195,10 @@ module.exports = {
 };
 
 ```
+
+
+## Filter with Priority
+
+Let's two event action fired on same event then which added first it will be executed. we can also the their execution order by implement the priority based execution.
+
+add_action("hook_name", "callback", priority);
