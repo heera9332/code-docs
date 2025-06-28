@@ -22,3 +22,5 @@ yarn-error.log*
 automate-run.sh
 test
 *.zip
+public_html
+.vscode

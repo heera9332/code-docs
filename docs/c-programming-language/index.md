@@ -7,3 +7,4 @@ keywords: [c programming documentation, c programming language documentation, c 
 
 - [Introduction to c](./introduction-to-c)
 - [Hello World](./hello-world)
+- [Functions in c](./functions-in-c)
