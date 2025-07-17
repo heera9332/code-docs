@@ -57,11 +57,13 @@ An ARP packet typically consists of the following fields:
 After a successful ARP request/response, devices store the IP-to-MAC mapping in their ARP cache for a period of time (typically 2 to 4 hours). This avoids the need to repeatedly send ARP requests for the same IP address.
 
 ARP Cache Example:
+
 Here’s an example of an ARP cache entry on a device:
 
-IP Address	MAC Address
-192.168.1.10	00:14:22:01:23:45
-192.168.1.20	00:24:68:01:54:78
+| IP Address	| MAC Address
+| --------------| -------------------|
+| 192.168.1.10	| 00:14:22:01:23:45  |
+| 192.168.1.20	| 00:24:68:01:54:78  |
 
 In this table, 192.168.1.10 has the MAC address 00:14:22:01:23:45.
 
@@ -69,23 +71,19 @@ In this table, 192.168.1.10 has the MAC address 00:14:22:01:23:45.
 
 ### ARP Request:
 
-Sent to all devices on a local network (broadcast).
-
-Contains an IP address, and the sender wants to know the corresponding MAC address.
+- Sent to all devices on a local network (broadcast).
+- Contains an IP address, and the sender wants to know the corresponding MAC address.
 
 ### ARP Reply:
 
-Sent directly to the requesting device (unicast).
-
-Contains the MAC address for the IP address queried in the ARP request.
+- Sent directly to the requesting device (unicast).
+- Contains the MAC address for the IP address queried in the ARP request.
 
 ### Gratuitous ARP:
 
-This is an ARP request that a device sends to announce or update its IP-MAC mapping on the local network.
-
-This can be used when a device changes its IP address or when it joins the network for the first time.
-
-It can also be used to prevent IP address conflicts by checking if another device is using the same IP.
+- This is an ARP request that a device sends to announce or update its IP-MAC mapping on the local network.
+- This can be used when a device changes its IP address or when it joins the network for the first time.
+- It can also be used to prevent IP address conflicts by checking if another device is using the same IP.
 
 ## ARP Cache Poisoning (ARP Spoofing/ARP Spoofing Attack):
 
@@ -99,9 +97,23 @@ This can allow the attacker to intercept, alter, or redirect network traffic, po
 
 ## Preventing ARP Spoofing:
 
-Static ARP Entries: You can manually assign IP-MAC mappings in the ARP table, making it resistant to ARP spoofing, though it’s impractical for large networks.
+**Static ARP Entries:** You can manually assign IP-MAC mappings in the ARP table, making it resistant to ARP spoofing, though it’s impractical for large networks.
 
-ARP Inspection: Dynamic ARP Inspection (DAI) on network switches can help protect against ARP spoofing attacks by ensuring only legitimate ARP packets are forwarded.
+**ARP Inspection:** Dynamic ARP Inspection (DAI) on network switches can help protect against ARP spoofing attacks by ensuring only legitimate ARP packets are forwarded.
 
-VPNs and Encryption: By using encryption (like in SSL/TLS or IPsec), the data can still be secured even if ARP spoofing occurs.
+**VPNs and Encryption:** By using encryption (like in SSL/TLS or IPsec), the data can still be secured even if ARP spoofing occurs.
 
+## Function:
+
+- Maps IP address → MAC address
+- Used by a host to find the hardware address (MAC) of another device on the same local network.
+
+**Example Scenario:**
+
+- A computer wants to send data to 192.168.1.10 but only knows the IP.
+- It sends an ARP Request: "Who has 192.168.1.10?"
+- The device with that IP replies with its MAC address.
+
+**Use Case:**
+
+Required for IPv4 networking on Ethernet LANs.
