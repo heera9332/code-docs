@@ -1,3 +1,6 @@
+---
+title="Top Rich Text Editors"
+---
 # Top Rich Text Editors
 
 ## 1. Tiptap Editor
