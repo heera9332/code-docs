@@ -1,0 +1,9 @@
+ank mukhya() {
+  mudrit("Namaste Duniya\n");
+  paravartan 0;
+}
+
+ank jod(ank a, ank b) {
+  ank s = a + b;
+  paravartan s;
+}
